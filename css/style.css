@@ -1,0 +1,178 @@
+.top-header {
+    background-color: #00c6f2;
+    padding-bottom: 20px;
+}
+
+.logo {
+    padding-top: 27px;
+}
+
+.header-ul {
+    display: flex;
+    padding-top: 34px;
+}
+
+.header-ul>li {
+    list-style: none;
+    /*padding-right: 50px;*/
+}
+
+.header-ul>li>a {
+    color: #ffffff;
+    padding: 8px 18px;
+}
+
+.header-ul>li>a:hover {
+    background-color: #33de8a;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.header-search {
+    padding-top: 28px;
+}
+
+.header-search-input {
+    padding: 8px 40px 8px 10px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    width: 100%;
+    outline: none;
+}
+
+.header-search-icon {
+    position: relative;
+    left: calc(100% - 30px);
+    bottom: 32px;
+
+}
+
+.dropdown {
+    display: none;
+}
+
+.slider-img {
+    height: 85vh;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background: none;
+}
+
+.carousel-caption {
+    bottom: 160px;
+}
+
+.carousel-caption-h5 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.get-free-now-button {
+    padding: 13px 49px;
+    background-color: #00c6f2;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.get-free-now-button:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #33de8a;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        text-align: center;
+    }
+    .header-ul {
+        padding-left: 0;
+    }
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption-h5 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slider-img {
+        height: 73vh;
+    }
+    .carousel-caption {
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1038px) {
+    .carousel-caption-h5 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .carousel-caption-h5 {
+        font-size: 35px;
+    }
+}
+
+    @media screen and (max-width: 992px) {
+    .dropdown {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .header-search {
+        padding-left: 0;
+    }
+    .btn-secondary {
+        border-radius: 20px;
+        background: blue;
+    }
+    .dropdown {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption-h5 {
+        font-size: 30px;
+    }
+    .slider-img {
+        /*height: auto;*/
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-search {
+        padding-left: 15px;
+    }
+    .slider-img {
+        height: 61vh;
+    }
+    .carousel-caption {
+        bottom: 80px;
+    }
+    .carousel-caption-h5 {
+        font-size: 25px;
+    }
+    .get-free-now-button {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .carousel-caption-h5 {
+        font-size: 25px;
+    }
+}
