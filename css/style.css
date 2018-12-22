@@ -125,13 +125,17 @@
 }
 
     @media screen and (max-width: 992px) {
+        .logo {
+            text-align: left;
+        }
     .dropdown {
         display: block;
     }
     .nav {
         display: none;
     }
-    .header-search {
+    .menu-btn {
+        text-align: right;
         padding-left: 0;
     }
     .btn-secondary {
@@ -147,8 +151,8 @@
     .carousel-caption-h5 {
         font-size: 30px;
     }
-    .slider-img {
-        /*height: auto;*/
+    .dropdown {
+        padding-left: 0;
     }
 }
 
@@ -157,7 +161,7 @@
         padding-left: 15px;
     }
     .slider-img {
-        height: 61vh;
+        height: 71vh;
     }
     .carousel-caption {
         bottom: 80px;
@@ -168,6 +172,15 @@
     .get-free-now-button {
         font-size: 12px;
         margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .logo {
+        /*text-align: right;*/
+    }
+    .menu-btn {
+        /*text-align: left;*/
     }
 }
 
