@@ -396,6 +396,28 @@ i {
     margin-top: 10px;
 }
 
+.all-blog {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.all-blog_a {
+    padding-left: 10px;
+    color: #00c6f2;
+    font-size: 15px;
+}
+
+.all-blog_a:hover {
+    text-decoration: none;
+    color: #00c6f2;
+}
+
+.bell-icon {
+    color: #00c6f2;
+    font-size: 21px;
+}
+
 @media screen and (max-width: 1200px) {
     .logo {
         text-align: center;
