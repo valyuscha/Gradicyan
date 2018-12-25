@@ -249,17 +249,18 @@ i {
     text-decoration: none;
 }
 
-.what-we-do-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.what-we-do-img {
+    padding-bottom: 200px;
 }
 
-.block-container {
-    position: relative;
-    float: left;
-    margin: 2px;
-}
-.block-container, .block-container div, .block-container img { width: 95%; height: 95%; }
+/*.block-container {*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*margin: 2px;*/
+/*}*/
+.block-container, .block-container div, .block-container img {
+    width: 170px;
+    height: 170px;}
 .block-container div, .block-container img { position: absolute; }
 .block-container img {z-index: 1000;}
 .block-front {
@@ -296,6 +297,11 @@ i {
     opacity: 0;
     color: white;
     cursor: pointer;
+}
+
+.block-front {
+    border: 1px solid #00c6f2;
+    border-radius: 5px;
 }
 
 .our-blog {
@@ -407,17 +413,17 @@ i {
     .extra-block {
         padding-left: 100px;
     }
-    .block-container, .block-container div, .block-container img { width: 95%; height: 85%; }
-    .block-container div, .block-container img { position: absolute; }
-    .block-container img {z-index: 1000;}
-    .block-front {
-        z-index: 1001;
-        background-color: #00c6f2;
-        transition: all 0.4s ease-in-out 0s;
-        opacity: 0;
-        color: white;
-        cursor: pointer;
-    }
+    /*.block-container, .block-container div, .block-container img { width: 95%; height: 85%; }*/
+    /*.block-container div, .block-container img { position: absolute; }*/
+    /*.block-container img {z-index: 1000;}*/
+    /*.block-front {*/
+        /*z-index: 1001;*/
+        /*background-color: #00c6f2;*/
+        /*transition: all 0.4s ease-in-out 0s;*/
+        /*opacity: 0;*/
+        /*color: white;*/
+        /*cursor: pointer;*/
+    /*}*/
 }
 
 @media screen and (max-width: 1100px) {
@@ -480,21 +486,21 @@ i {
     .card {
         margin-right: 50px;
     }
-        .block-container, .block-container div, .block-container img { width: 85%; height: 95%; }
-        .block-container div, .block-container img { position: absolute; }
-        .block-container img {z-index: 1000;}
-        .block-front {
-            z-index: 1001;
-            background-color: #00c6f2;
-            transition: all 0.4s ease-in-out 0s;
-            opacity: 0;
-            color: white;
-            cursor: pointer;
-        }
-        .what-we-do-img {
-            padding-bottom: 190px;
-            padding-top: 40px;
-        }
+        /*.block-container, .block-container div, .block-container img { width: 85%; height: 95%; }*/
+        /*.block-container div, .block-container img { position: absolute; }*/
+        /*.block-container img {z-index: 1000;}*/
+        /*.block-front {*/
+            /*z-index: 1001;*/
+            /*background-color: #00c6f2;*/
+            /*transition: all 0.4s ease-in-out 0s;*/
+            /*opacity: 0;*/
+            /*color: white;*/
+            /*cursor: pointer;*/
+        /*}*/
+        /*.what-we-do-img {*/
+            /*padding-bottom: 190px;*/
+            /*padding-top: 40px;*/
+        /*}*/
         .our-blog-img2 {
             margin-top: 10px;
             background-size: cover;
@@ -520,9 +526,8 @@ i {
         margin: 80px auto;
     }
     .what-we-do-img {
-        padding-bottom: 130px;
+        /*padding-bottom: 130px;*/
     }
-
 }
 
 @media screen and (max-width: 575px) {
@@ -565,7 +570,27 @@ i {
         color: white;
         cursor: pointer;
     }
-
+    .what-we-do-img{
+        width: 170px;
+        height: 170px;
+        position: relative;
+        left: 35%;
+    }
+    .what-we-do-img img{
+        width: 170px;
+        height: 170px;
+        padding-top: 0;
+    }
+    /*.my-block-front {*/
+        /*!*position: relative;*!*/
+        /*!*left: 205px;*!*/
+        /*!*top: 0;*!*/
+        /*margin-left: 190px;*/
+        /*margin-top: 40px;*/
+    /*}*/
+    .my-block-front {
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -599,10 +624,32 @@ i {
     .our-blog-img3 {
         padding-left: 38px;
     }
+    .what-we-do-img img {
+        display: block;
+        width: 170px;
+        height: 170px;
+    }
+    .my-block-front {
+        position: absolute;
+    }
+    .what-we-do-img{
+        width: 170px;
+        height: 170px;
+        position: relative;
+        left: 13%;
+    }
+
 }
 
 @media screen and (max-width: 370px) {
     .carousel-caption-h5 {
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .what-we-do-img_row {
+        margin-left: -50px;
+        margin-right: 0;
     }
 }
