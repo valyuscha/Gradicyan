@@ -515,6 +515,71 @@ i {
     text-decoration: none;
 }
 
+.top-footer {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    padding-bottom: 30px;
+}
+
+.nav-members-infor-name {
+    color: #1e2020;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-members-infor-ul {
+    padding-top: 10px;
+}
+
+.nav-members-infor-ul>li {
+    list-style: none;
+    line-height: 25px;
+}
+
+.nav-members-infor-ul>li>a {
+    color: #898989;
+    font-size: 15px;
+}
+
+.footer-icons {
+    text-align: right;
+}
+
+.bottom-footer {
+    background-color: #00c6f2;
+    padding-top: 33px;
+    padding-bottom: 18px;
+}
+
+.footer-bottom-text {
+    font-size: 15px;
+    color: #ffffff;
+    vertical-align: center;
+}
+
+.footer-icons_ul>li {
+    list-style: none;
+    float: right;
+    margin-left: 22px;
+}
+
+.footer-icons_ul>li>a {
+    padding: 5px 9px;
+    color: #00c6f2;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.footer-icons_ul>li>a:hover {
+    background-color: #33de8a;
+    color: #ffffff;
+    border-color: #33de8a;
+}
+
 @media screen and (max-width: 1200px) {
     .logo {
         text-align: center;
@@ -535,6 +600,13 @@ i {
     .form {
         width: 100%;
         margin: 0 215px;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .nav-members-infor-name,
+    .nav-members-infor-ul>li {
+        text-align: center;
     }
 }
 
@@ -629,6 +701,14 @@ i {
     .form {
         width: 100%;
         margin: 0 40px;
+    }
+    .footer-bottom-text {
+        text-align: center;
+    }
+    .footer-icons_ul {
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
     }
 }
 
