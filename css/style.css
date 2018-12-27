@@ -481,7 +481,7 @@ i {
     color: #ffffff;
 }
 
-::placeholder {
+.main-inputs::placeholder {
     color: #ffffff;
 }
 
