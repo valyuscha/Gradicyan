@@ -1,3 +1,6 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -13,7 +16,6 @@ html, body {
     width: 100%;
 }
 
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 i {
     font-family: fontawesome !important;
@@ -266,6 +268,14 @@ i {
 
 .what-we-do-img {
     padding-bottom: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.my-block-front {
+    position: absolute;
 }
 
 /*.block-container {*/
@@ -584,10 +594,10 @@ i {
         font-size: 12px;
         margin-top: 30px;
     }
-    .what-we-do-images {
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 60px;
-    }
+    /*.what-we-do-images {*/
+        /*grid-template-columns: 1fr 1fr;*/
+        /*margin-bottom: 60px;*/
+    /*}*/
     .block-container img {
         width: 100%;
         height: 120%;
@@ -607,40 +617,55 @@ i {
         color: white;
         cursor: pointer;
     }
+    .what-we-do-img:first-child {
+        margin-top: 50px;
+    }
+    .what-we-do-img:last-child {
+        margin-bottom: 50px;
+    }
     .what-we-do-img{
-        width: 170px;
-        height: 170px;
         position: relative;
-        padding-left: 35%;
+        margin-top: 40px;
+        /*padding-left: 35%;*/
     }
-    .what-we-do-img img{
-        width: 170px;
-        height: 170px;
-        padding-top: 0;
+    /*.block-container img {*/
+        /*width: 170px;*/
+        /*height: 170px;}*/
+    .block-container, .block-container div, .block-container img {
+        width: 80%;
+        height: 400px;
+        padding-top: 0;}
+    .block-container div, .block-container img { position: absolute; }
+    .block-container img {z-index: 1000;}
+    .block-front {
+        z-index: 1001;
+        background-color: #00c6f2;
+        transition: all 0.4s ease-in-out 0s;
+        opacity: 0;
+        color: white;
+        cursor: pointer;
     }
-    /*.my-block-front {*/
-        /*!*position: relative;*!*/
-        /*!*left: 205px;*!*/
-        /*!*top: 0;*!*/
-        /*margin-left: 190px;*/
-        /*margin-top: 40px;*/
-    /*}*/
+    .my-block-front {
+        position: absolute;
+        width: 80%;
+        height: 400px;
+    }
     .my-block-front {
         position: absolute;
     }
 }
 
 @media screen and (max-width: 430px) {
-    .what-we-do-images {
-        grid-template-columns: 1fr;
+    /*.what-we-do-images {*/
+        /*grid-template-columns: 1fr;*/
 
-    }
+    /*}*/
     .block-container img {
         width: 65%;
         height: 115%;
     }
     .what-we-do-img {
-        padding-left: 20%;
+        /*padding-left: 20%;*/
     }
     .our-blog-img1 {
         width: 100%;
@@ -661,24 +686,26 @@ i {
     .our-blog-img3 {
         padding-left: 38px;
     }
-    .what-we-do-img img {
-        display: block;
-        width: 170px;
-        height: 170px;
-    }
     .my-block-front {
-        position: absolute;
+        width: 80%;
+        height: 300px;
     }
-    .what-we-do-img{
-        width: 170px;
-        height: 170px;
-        position: relative;
-        display: flex;
-        justify-content: center;
+    .what-we-do-img:last-child {
+        margin-bottom: 50px;
     }
-    .what-we-do-img_row {
-        /*margin-left: -50px;*/
-        margin-right: 0;
+    .block-container, .block-container div, .block-container img {
+        width: 80%;
+        height: 300px;
+        margin: 20px auto;}
+    .block-container div, .block-container img { position: absolute; }
+    .block-container img {z-index: 1000;}
+    .block-front {
+        z-index: 1001;
+        background-color: #00c6f2;
+        transition: all 0.4s ease-in-out 0s;
+        opacity: 0;
+        color: white;
+        cursor: pointer;
     }
 }
 
