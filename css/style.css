@@ -26,8 +26,28 @@ i {
 }
 
 .top-header {
+    overflow: hidden;
+    background-color: #999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.top-header .header-ul>li>a {
+    float: left;
+    display: block;
+    color: #fff;
+    /*padding: 15px 15px;*/
+    text-decoration: none;
+}
+
+
+
+.top-header {
     background-color: #00c6f2;
     padding-bottom: 20px;
+    position: fixed;
 }
 
 .logo {
@@ -36,7 +56,7 @@ i {
 
 .header-ul {
     display: flex;
-    padding-top: 34px;
+    padding-top: 24px;
 }
 
 .header-ul>li {
@@ -80,6 +100,7 @@ i {
 
 .slider-img {
     height: 85vh;
+    margin-top: 87px;
 }
 
 .carousel-indicators li {
@@ -95,7 +116,7 @@ i {
 }
 
 .carousel-caption-h5 {
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
 }
 
@@ -308,6 +329,7 @@ i {
     width: 50px;
     height: 50px;
 }
+
 
 .gallery-img {
     width: 480px;
